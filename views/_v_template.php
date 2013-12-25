@@ -12,8 +12,28 @@
 
 <body>	
 
-	<?php if(isset($content)) echo $content; ?>
+	<!--<?php if(isset($content)) echo $content; ?>-->
 
-	<?php if(isset($client_files_body)) echo $client_files_body; ?>
+	<!--<?php if(isset($client_files_body)) echo $client_files_body; ?>-->
+	<div id='menu'>
+
+		<a href='/'>Home</a>
+
+		<?php if($user): ?>
+
+			<a href='/users/logout'>Logout</a>
+			<a href='/users/profile'>Profile</a>
+
+		<?php else: ?>
+
+			<a href='/users/signup'>Sign up</a>
+			<a href='/users/login'>Log in</a>
+		<?php endif; ?>
+
+	</div>
+
+	<br>
+
+	<?php if(isset($content)) echo $content; ?>
 </body>
 </html>
