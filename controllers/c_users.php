@@ -3,7 +3,7 @@ class users_controller extends base_controller {
 
     public function __construct() {
         parent::__construct();
-        echo "users_controller construct called<br><br>";
+        //echo "users_controller construct called<br><br>";
     } 
 
     public function index() {
@@ -47,7 +47,7 @@ class users_controller extends base_controller {
 
         $_POST = DB::instance(DB_NAME)->sanitize($_POST);
 
-        $_POST['password'] = sha1(PASSWORD_SALT.$_POST['PASSWORD']);
+        $_POST['password'] = sha1(PASSWORD_SALT.$_POST['password']);
 
         $q = "SELECT token
             FROM users
@@ -97,7 +97,7 @@ class users_controller extends base_controller {
         //$this->template->content->user_name = $user_name;
 
         # Render View
-        echo $view;
+        echo $this->template;
     }
 
 } # end of the class

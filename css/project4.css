@@ -1,0 +1,48 @@
+/*body {
+	background:url('/images/whiteKitchen.jpg');
+}*/
+html { 
+	background: url('/images/whiteKitchen.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+a {
+	text-decoration: none;
+	color:black;
+	font-family: 'Vampiro One', cursive;
+	font-size: 20px;
+}
+
+body {
+	font-family:'Vampiro One', cursive;
+	text-align: center;
+}
+
+#add_button {
+	height:40px;
+	width:60px;
+}
+
+input {
+	border-radius: 10px;
+}
+
+textarea {
+	border-radius: 10px;
+	max-width:400px;
+	max-height:400px;
+}
+
+form {
+	border: solid black 5px;
+	width:40%;
+	margin-left: 370px;
+}
+
+article {
+	border: solid white 5px;
+	margin-left:50px;
+	margin-right:50px;
+}
