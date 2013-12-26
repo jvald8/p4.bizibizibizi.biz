@@ -31,7 +31,8 @@ class users_controller extends base_controller {
 
         $user_id = DB::instance(DB_NAME)->insert('users', $_POST);
 
-        echo 'You\'re signed up';
+        //echo 'You\'re signed up';
+        Router::redirect("/users/login");
     }
 
     public function login($error = NULL) {
